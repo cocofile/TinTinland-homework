@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dfx": "0.9.3",
+  "canisters": {
+    "day3_counter": {
+      "type": "motoko",
+      "main": "src/day3_counter/main.mo"
+    },
+    "day3_counter_assets": {
+      "type": "assets",
+      "source": [
+        "src/day3_counter_assets/assets"
+      ],
+      "dependencies": [
+        "day3_counter"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
